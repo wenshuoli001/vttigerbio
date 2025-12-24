@@ -2,5 +2,5 @@ theme: jekyll-theme-cayman
 title: "Visual-textual Dermatoglyphic Animal Biometrics: A First Case Study on Panthera tigris"
 description: "Wenshuo Li, Majid Mirmehdi, Tilo Burghardt"
 show_downloads: true
-baseurl: ""
-url: "https://vt-tiger-bio.github.io"
+baseurl: "/vt-tiger-bio.github.io"
+url: "https://wenshuoli001.github.io"
