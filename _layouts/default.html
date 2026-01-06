@@ -12,11 +12,26 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     {% include head-custom.html %}
+    <style>
+      body header.page-header,
+      header.page-header[role="banner"],
+      .page-header {
+        background-image: url('{{ "/assets/media/images/pattern.png" | relative_url }}') !important;
+        background-repeat: repeat !important;
+        background-size: auto !important;
+        background-color: transparent !important;
+        background: url('{{ "/assets/media/images/pattern.png" | relative_url }}') repeat !important;
+      }
+      .page-header::before,
+      .page-header::after {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner" style="background-image: url('{{ site.baseurl }}/assets/media/images/pattern.png'); background-repeat: repeat; background-size: auto; background-color: transparent !important;">
+    <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
