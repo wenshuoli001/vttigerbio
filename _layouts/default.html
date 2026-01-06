@@ -26,15 +26,22 @@
       .page-header::after {
         display: none !important;
       }
+      body header.page-header .project-tagline,
+      header.page-header .project-tagline,
+      .page-header .project-tagline,
       .project-tagline {
         color: #ffffff !important;
       }
-      .page-header .btn {
+      body header.page-header .btn,
+      header.page-header .btn,
+      .page-header .btn,
+      .page-header a.btn {
         color: #ffffff !important;
         border-color: #ffffff !important;
         background-color: transparent !important;
       }
-      .page-header .btn:hover {
+      .page-header .btn:hover,
+      .page-header a.btn:hover {
         color: #000000 !important;
         background-color: #ffffff !important;
       }
@@ -45,10 +52,10 @@
 
     <header class="page-header" role="banner" style="background: url('{{ site.baseurl }}/assets/media/images/pattern.png') repeat !important; background-color: transparent !important;">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <h2 class="project-tagline" style="color: #ffffff !important;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
-        <a href="https://github.com/wenshuoli001/Visual-textual-Dermatoglyphic-Animal-Biometrics" class="btn">Project files and source code</a>
-        <a href="https://arxiv.org/abs/2512.14878" class="btn">Arxiv</a>
+        <a href="https://github.com/wenshuoli001/Visual-textual-Dermatoglyphic-Animal-Biometrics" class="btn" style="color: #ffffff !important; border-color: #ffffff !important; background-color: transparent !important;">Project files and source code</a>
+        <a href="https://arxiv.org/abs/2512.14878" class="btn" style="color: #ffffff !important; border-color: #ffffff !important; background-color: transparent !important;">Arxiv</a>
       {% endif %}
     </header>
 
